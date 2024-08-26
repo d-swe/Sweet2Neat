@@ -2,8 +2,8 @@
 Feature: Order CRUD operations
     Scenario Outline: Creating an order
         Given I am on the order list page
-        When I  fill in “<Customer Name>”, “<Order date>”, “<Status>”, and “<Customer Address>”
-        Then I click Add order button
+        When I fill in “<Customer Name>”, “<Order date>”, “<Status>”, and “<Customer Address>”
+        And I click the Add order button
         Then new order information should be in the table
     Examples:
         |Customer Name| Order Date| Status| Customer Address|
